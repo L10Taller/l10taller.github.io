@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
-<title>La 10 del Taller</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>La 10 del Taller | TorqueOS</title>
 
 <style>
+
 body{
+margin:0;
 background:#0b0f18;
 color:white;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 display:flex;
 justify-content:center;
 align-items:center;
 height:100vh;
-margin:0;
 text-align:center;
 }
 
 .box{
-max-width:600px;
+max-width:700px;
+padding:20px;
+}
+
+.logo{
+width:130px;
+margin-bottom:20px;
 }
 
 h1{
 font-size:40px;
-margin-bottom:10px;
+margin:10px 0;
 }
 
 p{
 opacity:0.8;
+font-size:18px;
 }
 
-button{
+.btn{
 background:#00c2ff;
-border:none;
-padding:12px 20px;
-border-radius:8px;
 color:black;
+padding:14px 24px;
+border-radius:8px;
 font-weight:bold;
+text-decoration:none;
+display:inline-block;
 margin-top:20px;
-cursor:pointer;
 }
+
+.btn:hover{
+background:#00a5db;
+}
+
+.footer{
+margin-top:40px;
+font-size:14px;
+opacity:0.5;
+}
+
 </style>
+
 </head>
+
 
 <body>
 
 <div class="box">
+
+<img src="logo.png" class="logo">
 
 <h1>La 10 del Taller</h1>
 
@@ -53,9 +80,14 @@ cursor:pointer;
 TorqueOS – Sistema optimizado para diagnóstico automotriz
 </p>
 
-<button>Próximamente</button>
+<a class="btn">Próximamente</a>
+
+<div class="footer">
+© 2026 La 10 del Taller
+</div>
 
 </div>
 
 </body>
+
 </html>
