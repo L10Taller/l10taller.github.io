@@ -130,9 +130,7 @@ a {
   color: var(--muted);
 }
 
-.app-text,
-.contact-lead,
-.search-lead {
+.app-text {
   margin-top: 20px;
   color: var(--muted);
   line-height: 1.9;
@@ -293,8 +291,7 @@ a {
 }
 
 .hero-grid,
-.app-grid,
-.contact-wrap {
+.app-grid {
   display: grid;
   grid-template-columns: 1.04fr 0.96fr;
   gap: 42px;
@@ -315,19 +312,14 @@ a {
 .footer-box,
 .app-panel,
 .showcase-wrap,
-.donation-wrap,
-.search-wrap,
-.contact-info,
-.contact-form,
-.contact-card {
+.donation-wrap {
   border: 1px solid var(--line);
   background: var(--panel);
   backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
 }
 
-.mini-card,
-.contact-card {
+.mini-card {
   border-radius: 20px;
   padding: 16px;
 }
@@ -498,55 +490,6 @@ a {
   margin-bottom: 6px;
 }
 
-.search-wrap {
-  border-radius: 34px;
-  padding: 30px;
-}
-
-.search-box {
-  display: flex;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.search-box input {
-  flex: 1;
-  min-height: 58px;
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.04);
-  color: white;
-  padding: 0 18px;
-  font-size: 16px;
-  outline: none;
-}
-
-.search-box input:focus {
-  border-color: rgba(103, 232, 249, 0.4);
-  box-shadow: 0 0 0 4px rgba(103, 232, 249, 0.08);
-}
-
-.search-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.search-tag {
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.05);
-  color: rgba(255,255,255,0.82);
-  border-radius: 999px;
-  padding: 10px 14px;
-  cursor: pointer;
-}
-
-.search-tag:hover {
-  border-color: rgba(103,232,249,0.25);
-  background: rgba(103,232,249,0.08);
-}
-
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -642,32 +585,19 @@ a {
   padding: 30px;
 }
 
-.chip-grid,
-.contact-cards {
+.chip-grid {
   margin-top: 22px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
 }
 
-.chip,
-.contact-card {
+.chip {
   border-radius: 18px;
   padding: 16px;
   border: 1px solid var(--line);
   background: rgba(7,17,34,0.9);
   color: rgba(255,255,255,0.76);
-}
-
-.contact-card strong {
-  display: block;
-  margin-bottom: 8px;
-  color: #fff;
-}
-
-.contact-card span {
-  font-size: 14px;
-  line-height: 1.6;
 }
 
 .phone-wrap {
@@ -787,44 +717,9 @@ a {
   padding: 16px 8px 8px;
 }
 
-.contact-info,
-.contact-form,
 .donation-wrap {
   border-radius: 34px;
   padding: 30px;
-}
-
-.contact-form {
-  display: grid;
-  gap: 14px;
-}
-
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.04);
-  color: white;
-  padding: 16px 18px;
-  font-size: 15px;
-  outline: none;
-  resize: vertical;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: rgba(103,232,249,0.4);
-  box-shadow: 0 0 0 4px rgba(103, 232, 249, 0.08);
-}
-
-.donation-wrap {
   position: relative;
   overflow: hidden;
   background: linear-gradient(90deg, rgba(250,204,21,0.10), rgba(251,191,36,0.05), rgba(255,255,255,0.02));
@@ -935,7 +830,6 @@ a {
 @media (max-width: 1100px) {
   .hero-grid,
   .app-grid,
-  .contact-wrap,
   .donation-content {
     grid-template-columns: 1fr;
   }
@@ -988,20 +882,12 @@ a {
     background: rgba(255,255,255,0.04);
   }
 
-  .search-box,
-  .form-row,
   .chip-grid,
-  .contact-cards,
   .grid-4,
   .downloads-grid,
   .videos-grid {
     grid-template-columns: 1fr;
     display: grid;
-  }
-
-  .search-box {
-    display: flex;
-    flex-direction: column;
   }
 
   .section {
