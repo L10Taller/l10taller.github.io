@@ -1,95 +1,374 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La 10 del Taller | TorqueOS</title>
-
-  <style>
-
-    body{
-      margin:0;
-      background:#0b0f18;
-      color:white;
-      font-family:Arial, Helvetica, sans-serif;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      min-height:100vh;
-      text-align:center;
-    }
-
-    .box{
-      max-width:800px;
-      padding:20px;
-    }
-
-    .logo{
-      width:320px;
-      max-width:90%;
-      margin-bottom:30px;
-    }
-
-    h1{
-      font-size:52px;
-      margin:10px 0;
-      letter-spacing:1px;
-    }
-
-    p{
-      opacity:0.8;
-      font-size:20px;
-      margin-top:10px;
-    }
-
-    .btn{
-      background:#00c2ff;
-      color:black;
-      padding:14px 26px;
-      border-radius:10px;
-      font-weight:bold;
-      text-decoration:none;
-      display:inline-block;
-      margin-top:25px;
-      transition:0.2s;
-    }
-
-    .btn:hover{
-      background:#00a5db;
-    }
-
-    .footer{
-      margin-top:40px;
-      font-size:14px;
-      opacity:0.5;
-    }
-
-  </style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TorqueOS | Sistema operativo y ecosistema</title>
+  <meta
+    name="description"
+    content="TorqueOS - Sistema operativo optimizado, app OBD2, descargas, videos y comunidad."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-
 <body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#inicio" class="brand">
+        <div class="brand-mark">T</div>
+        <div class="brand-text">
+          <strong>TorqueOS</strong>
+          <span>Sistema operativo + ecosistema automotriz</span>
+        </div>
+      </a>
 
-  <div class="box">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        ☰
+      </button>
 
-    <img src="logo.png" class="logo" alt="Logo La 10 del Taller">
-
-    <h1>La 10 del Taller</h1>
-
-    <p>
-      TorqueOS – Sistema optimizado para diagnóstico automotriz
-    </p>
-
-    <a class="btn" href="#">Próximamente</a>
-
-    <div class="footer">
-      © 2026 La 10 del Taller
+      <nav class="menu" id="mainMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#descargas">Descargas</a>
+        <a href="#app">App OBD2</a>
+        <a href="#videos">Videos</a>
+        <a href="#donar" class="btn btn-donate">Donar</a>
+      </nav>
     </div>
+  </header>
 
-  </div>
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="badge">
+            <span class="dot"></span>
+            Proyecto principal en crecimiento
+          </div>
 
+          <h1 class="title-xl" style="margin-top: 18px;">
+            El centro de tu ecosistema para
+            <span class="gradient-text">TorqueOS</span>
+          </h1>
+
+          <p class="lead">
+            Una landing moderna para mostrar tu sistema operativo, tus futuras descargas, la app OBD2,
+            videos, guías y enlaces a tu comunidad. La prioridad visual la tiene TorqueOS, pero todo lo
+            que vayas creando puede aparecer aquí como parte del mismo ecosistema.
+          </p>
+
+          <div class="btns">
+            <a href="#descargas" class="btn btn-primary">Ver descargas</a>
+            <a href="#videos" class="btn btn-secondary">Ver demostraciones</a>
+          </div>
+
+          <div class="hero-cards">
+            <div class="mini-card">
+              <h4>Sistema operativo</h4>
+              <p>Tu producto principal y el elemento más importante de toda la web.</p>
+            </div>
+            <div class="mini-card">
+              <h4>App OBD2</h4>
+              <p>Integrada como segundo producto sin quitarle protagonismo a TorqueOS.</p>
+            </div>
+            <div class="mini-card">
+              <h4>Descargas futuras</h4>
+              <p>Espacio preparado para agregar herramientas, utilidades, builds y más.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="showcase-wrap reveal">
+          <div class="showcase-inner">
+            <div class="showcase-header">
+              <div>
+                <p>Vista principal</p>
+                <h3>TorqueOS Showcase</h3>
+              </div>
+              <div class="pill pill-cyan">Sistema principal</div>
+            </div>
+
+            <div class="showcase-screen">
+              <div class="window">
+                <div class="window-top">
+                  <div>
+                    <div class="window-sub">TorqueOS</div>
+                    <h4>v1.0</h4>
+                  </div>
+                  <div class="window-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+
+                <div class="window-grid">
+                  <div class="panel-box">
+                    <strong>Landing preparada para mostrar:</strong>
+                    <ul class="check-list">
+                      <li>Capturas del sistema operativo</li>
+                      <li>Versiones y descargas</li>
+                      <li>Videos de demo e instalación</li>
+                      <li>App OBD2 y próximos lanzamientos</li>
+                    </ul>
+                  </div>
+
+                  <div class="stack">
+                    <div class="panel-box">
+                      <strong>Prioridad</strong>
+                      <p>TorqueOS primero</p>
+                    </div>
+                    <div class="panel-box">
+                      <strong>Integración</strong>
+                      <p>App OBD2 + descargas futuras</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-4">
+        <article class="card reveal">
+          <div class="icon-box"></div>
+          <h3>Rendimiento optimizado</h3>
+          <p>
+            Sistema más ligero, fluido y enfocado en velocidad, estabilidad y respuesta en tareas reales.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon-box"></div>
+          <h3>Visual premium</h3>
+          <p>
+            Estética oscura con identidad propia, paneles modernos y una presentación más profesional.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon-box"></div>
+          <h3>Enfoque automotriz</h3>
+          <p>
+            Preparado para convivir con herramientas, utilidades y apps orientadas a diagnóstico y trabajo técnico.
+          </p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon-box"></div>
+          <h3>Ecosistema escalable</h3>
+          <p>
+            La web está pensada para seguir agregando builds, apps, guías, descargas y futuros lanzamientos.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="descargas">
+      <div class="container">
+        <div class="reveal section-head">
+          <div class="eyebrow">Descargas</div>
+          <h2 class="title-lg">Todo lo que vayas creando, en un solo lugar</h2>
+          <p class="lead section-lead">
+            Esta sección está preparada para que puedas sumar nuevas versiones, apps, utilidades,
+            packs y archivos descargables sin rehacer la página cada vez.
+          </p>
+        </div>
+
+        <div class="downloads-grid">
+          <article class="download-card reveal">
+            <div class="card-top">
+              <span class="tag tag-dark">Sistema Operativo</span>
+              <span class="tag tag-cyan">Prioridad</span>
+            </div>
+            <h3>TorqueOS v1.0</h3>
+            <p>
+              Edición principal optimizada para rendimiento, limpieza visual y uso técnico/automotriz.
+              Aquí luego puedes agregar versión, requisitos, peso y enlace real de descarga.
+            </p>
+            <a href="#" class="btn btn-secondary">Descargar ISO</a>
+          </article>
+
+          <article class="download-card reveal">
+            <div class="card-top">
+              <span class="tag tag-dark">App Android</span>
+              <span class="tag tag-cyan">Play Store</span>
+            </div>
+            <h3>TorqueOS OBD2</h3>
+            <p>
+              App enfocada en diagnóstico OBD2 con interfaz moderna y acceso rápido a funciones clave.
+              Por ahora puedes dejarla como próximamente o luego poner el enlace real.
+            </p>
+            <a href="#" class="btn btn-secondary">Ver app</a>
+          </article>
+
+          <article class="download-card reveal">
+            <div class="card-top">
+              <span class="tag tag-dark">Utilidades</span>
+              <span class="tag tag-cyan">Próximo</span>
+            </div>
+            <h3>Pack de herramientas</h3>
+            <p>
+              Espacio reservado para drivers, extras, configuraciones, presets, manuales o cualquier
+              archivo complementario del ecosistema TorqueOS.
+            </p>
+            <a href="#" class="btn btn-secondary">Ver más</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="app">
+      <div class="container app-grid">
+        <div class="app-panel reveal">
+          <div class="eyebrow">App móvil</div>
+          <h2 class="title-lg">Tu app OBD2 también tiene su espacio</h2>
+          <p class="app-text">
+            La web puede mostrar la app de Play Store como parte del ecosistema, sin quitarle
+            protagonismo a TorqueOS. Aquí puedes poner capturas, funciones principales, botón de descarga
+            y el estado del lanzamiento.
+          </p>
+
+          <div class="chip-grid">
+            <div class="chip">Botón directo a Play Store</div>
+            <div class="chip">Capturas del diseño</div>
+            <div class="chip">Funciones destacadas</div>
+            <div class="chip">Integración visual con TorqueOS</div>
+          </div>
+        </div>
+
+        <div class="phone-wrap reveal">
+          <div class="phone">
+            <div class="phone-screen">
+              <div class="phone-top">
+                <span>TorqueOS OBD2</span>
+                <span>Play Store</span>
+              </div>
+
+              <div class="app-preview">
+                <div class="app-preview-icon"></div>
+                <h3>OBD2 App</h3>
+                <p>
+                  Espacio reservado para screenshots, descripción breve, funciones y enlace de descarga.
+                </p>
+              </div>
+
+              <div class="feature-lines">
+                <div class="feature-line">Lectura de códigos</div>
+                <div class="feature-line">Diseño premium</div>
+                <div class="feature-line">Historial de vehículos</div>
+                <div class="feature-line">Compatibilidad OBD2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="reveal section-head">
+          <div class="eyebrow">Videos</div>
+          <h2 class="title-lg">Demostraciones, reviews y avances</h2>
+          <p class="lead section-lead">
+            Aquí puedes subir tus videos de YouTube para enseñar el sistema, sus mejoras, instalaciones,
+            comparativas y también el avance de tu app.
+          </p>
+        </div>
+
+        <div class="videos-grid">
+          <article class="video-card reveal">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Presentación de TorqueOS"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3>Presentación de TorqueOS</h3>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Review del sistema"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3>Review del sistema</h3>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="TorqueOS OBD2 App"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3>TorqueOS OBD2 App</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="donar">
+      <div class="container">
+        <div class="donation-wrap reveal">
+          <div class="donation-content">
+            <div>
+              <div class="eyebrow eyebrow-yellow">Donaciones</div>
+              <h2 class="title-lg">Apoya el desarrollo de TorqueOS</h2>
+              <p class="lead donation-lead">
+                En vez de una zona VIP, esta parte puede quedar dedicada a donaciones para ayudarte
+                a financiar nuevas builds, tiempo de desarrollo, mejoras visuales, pruebas y lanzamiento
+                de nuevos proyectos.
+              </p>
+            </div>
+
+            <div class="donation-actions">
+              <a href="#" class="btn btn-yellow">PayPal</a>
+              <a href="#" class="btn btn-yellow">Ko-fi</a>
+              <a href="#" class="btn btn-yellow">Mercado Pago</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section footer-section">
+    <div class="container">
+      <div class="footer-box reveal">
+        <div>
+          <h3 class="footer-title">TorqueOS</h3>
+          <p>
+            Sistema operativo, app OBD2, descargas y comunidad en una sola web.
+          </p>
+        </div>
+
+        <div class="socials">
+          <a class="social" href="https://linktr.ee/la10deltaller" target="_blank" rel="noreferrer">Linktree</a>
+          <a class="social" href="https://linktr.ee/la10deltaller" target="_blank" rel="noreferrer">YouTube</a>
+          <a class="social" href="https://linktr.ee/la10deltaller" target="_blank" rel="noreferrer">TikTok</a>
+          <a class="social" href="https://linktr.ee/la10deltaller" target="_blank" rel="noreferrer">Instagram</a>
+          <a class="social" href="https://linktr.ee/la10deltaller" target="_blank" rel="noreferrer">Comunidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
