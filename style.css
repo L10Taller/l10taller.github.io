@@ -1,171 +1,198 @@
 :root {
-    --bg-color: #0b0d11;
-    --card-bg: rgba(255, 255, 255, 0.05);
-    --accent-yellow: #facc15;
+    --bg: #0d0e12;
     --graphite: #1a1a1a;
-    --text-color: #e2e8f0;
+    --accent: #facc15; /* Amarillo TorqueOS */
+    --text: #e2e8f0;
+    --text-dim: #94a3b8;
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
     overflow-x: hidden;
-    background: radial-gradient(circle at top right, #1a1c20, #0b0d11);
+    background-image: radial-gradient(circle at 80% 20%, #1e2025 0%, #0d0e12 100%);
 }
 
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 10%;
     align-items: center;
-    backdrop-filter: blur(10px);
+    padding: 1.5rem 8%;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 900;
-    letter-spacing: 2px;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.logo span {
-    color: var(--accent-yellow);
+.nav-logo {
+    height: 35px; /* Tamaño del logo ajustado */
+    width: auto;
+    filter: drop-shadow(0 0 5px rgba(250, 204, 21, 0.3));
 }
+
+.brand-name {
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.brand-name span { color: var(--accent); }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
+    align-items: center;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-dim);
     font-size: 0.9rem;
+    font-weight: 500;
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: var(--accent-yellow);
-}
+.nav-links a:hover { color: var(--accent); }
 
-.vip-tag {
-    background: var(--accent-yellow);
-    color: black !important;
-    padding: 5px 12px;
-    border-radius: 5px;
-    font-weight: bold;
+.btn-vip {
+    background: var(--accent);
+    color: #000 !important;
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-weight: 700 !important;
 }
 
 /* Hero Section */
 .hero {
     display: flex;
-    padding: 5% 10%;
+    padding: 5rem 8%;
+    min-height: 85vh;
     align-items: center;
-    min-height: 80vh;
-    gap: 50px;
+    gap: 40px;
 }
 
-.hero-content {
-    flex: 1;
-}
+.hero-text { flex: 1; }
 
-h1 {
-    font-size: 4rem;
-    font-weight: 800;
+.tag {
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
     margin-bottom: 1rem;
 }
 
+h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
 h1 span {
-    color: #3b82f6; /* Azul estilo Delta */
-    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    color: var(--accent);
+    text-shadow: 0 0 30px rgba(250, 204, 21, 0.2);
 }
 
 p {
-    line-height: 1.6;
-    color: #94a3b8;
-    max-width: 600px;
-    margin-bottom: 2rem;
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    max-width: 550px;
+    margin-bottom: 2.5rem;
 }
 
-/* Grid de Características */
-.feature-grid {
+/* Badges Grid */
+.features-badges {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.feature-item {
-    background: var(--card-bg);
+.badge {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
     padding: 12px;
     border-radius: 8px;
-    font-size: 0.75rem;
-    font-weight: bold;
+    font-size: 0.7rem;
+    font-weight: 800;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: 0.3s;
-    cursor: pointer;
 }
 
-.feature-item i {
-    margin-right: 8px;
-    color: var(--accent-yellow);
-}
+.badge i { margin-right: 5px; color: var(--accent); }
 
-.feature-item:hover {
-    background: rgba(250, 204, 21, 0.1);
-    border-color: var(--accent-yellow);
-    transform: translateY(-3px);
+.badge:hover {
+    background: rgba(250, 204, 21, 0.05);
+    border-color: var(--accent);
+    transform: translateY(-2px);
 }
 
 /* Botones */
-.cta-group {
-    display: flex;
-    gap: 15px;
-}
+.cta-container { display: flex; gap: 20px; }
 
-.btn {
-    padding: 15px 30px;
+.btn-main {
+    background: #fff;
+    color: #000;
+    padding: 16px 32px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     transition: 0.3s;
 }
 
-.btn-primary {
-    background: #2563eb;
-    color: white;
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+.btn-sub {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.btn-secondary {
-    background: var(--card-bg);
-    color: white;
-    border: 1px solid rgba(255,255,255,0.2);
+.btn-main:hover { transform: scale(1.05); background: var(--accent); }
+
+/* Visual */
+.hero-visual { flex: 1; display: flex; justify-content: center; }
+
+.glass-card {
+    background: var(--glass);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-.btn:hover {
-    transform: scale(1.05);
-}
-
-/* Imagen */
-.main-preview {
+.preview-img {
     width: 100%;
-    border-radius: 15px;
-    border: 2px solid rgba(59, 130, 246, 0.3);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    border-radius: 12px;
+    display: block;
 }
 
-@media (max-width: 968px) {
+/* Responsive */
+@media (max-width: 1024px) {
     .hero { flex-direction: column; text-align: center; }
-    .feature-grid { grid-template-columns: repeat(2, 1fr); }
-    .cta-group { justify-content: center; }
+    h1 { font-size: 3rem; }
+    p { margin: 0 auto 2rem; }
+    .features-badges { max-width: 500px; margin: 0 auto 3rem; }
+    .cta-container { justify-content: center; }
 }
