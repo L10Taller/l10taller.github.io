@@ -3,13 +3,26 @@ body {
   font-family: 'Inter', sans-serif;
   background: #0a0a0a;
   color: #fff;
+  overflow-x: hidden;
+}
+
+/* Fondo canvas */
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background: #111;
+  background: rgba(20,20,20,0.8);
+  backdrop-filter: blur(5px);
 }
 
 .navbar a {
@@ -26,8 +39,6 @@ body {
 .hero {
   text-align: center;
   padding: 6rem 2rem;
-  background: radial-gradient(circle at center, #0a0a0a, #1a1a1a);
-  animation: fadeIn 2s ease-in;
 }
 
 .hero h2 {
@@ -47,8 +58,8 @@ body {
 }
 
 .buttons .btn-yellow:hover {
-  box-shadow: 0 0 15px #facc15;
-  transform: scale(1.05);
+  box-shadow: 0 0 20px #facc15;
+  transform: scale(1.1);
 }
 
 .buttons .btn-gray {
@@ -62,8 +73,8 @@ body {
 }
 
 .buttons .btn-gray:hover {
-  box-shadow: 0 0 15px #999;
-  transform: scale(1.05);
+  box-shadow: 0 0 20px #999;
+  transform: scale(1.1);
 }
 
 .section {
@@ -98,11 +109,6 @@ body {
 .footer {
   text-align: center;
   padding: 2rem;
-  background: #111;
+  background: rgba(20,20,20,0.8);
   color: #aaa;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
