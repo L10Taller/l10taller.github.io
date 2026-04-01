@@ -1,8 +1,8 @@
-const menuToggle = document.getElementById('menuToggle');
-const mainNav = document.getElementById('mainNav');
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
 
-if (menuToggle && mainNav) {
-  menuToggle.addEventListener('click', () => {
-    mainNav.classList.toggle('active');
+if (menuBtn && menu) {
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("active");
   });
 }
