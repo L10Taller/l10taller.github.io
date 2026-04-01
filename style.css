@@ -20,17 +20,20 @@ body {
 
 .logo {
   color: #facc15;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .hero {
   text-align: center;
-  padding: 5rem 2rem;
-  background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+  padding: 6rem 2rem;
+  background: radial-gradient(circle at center, #0a0a0a, #1a1a1a);
+  animation: fadeIn 2s ease-in;
 }
 
 .hero h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #facc15;
+  text-shadow: 0 0 20px #facc15;
 }
 
 .buttons .btn-yellow {
@@ -40,6 +43,12 @@ body {
   margin: 0.5rem;
   border-radius: 8px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.buttons .btn-yellow:hover {
+  box-shadow: 0 0 15px #facc15;
+  transform: scale(1.05);
 }
 
 .buttons .btn-gray {
@@ -49,6 +58,12 @@ body {
   margin: 0.5rem;
   border-radius: 8px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+.buttons .btn-gray:hover {
+  box-shadow: 0 0 15px #999;
+  transform: scale(1.05);
 }
 
 .section {
@@ -56,7 +71,8 @@ body {
 }
 
 .section.dark {
-  background: #111;
+  background: linear-gradient(135deg, #111, #222);
+  border-left: 4px solid #facc15;
 }
 
 .app-img {
@@ -84,4 +100,9 @@ body {
   padding: 2rem;
   background: #111;
   color: #aaa;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
