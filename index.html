@@ -1,267 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TorqueOS</title>
-  <meta name="description" content="TorqueOS - Optimización, herramientas, app y sistema operativo." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TorqueOS - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/tu-codigo.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="TorqueOS Logo">
+                <span>TorqueOS</span>
+            </div>
+            <ul>
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#proyectos"><i class="fas fa-tools"></i> Herramientas</a></li>
+                <li><a href="#descargas"><i class="fas fa-download"></i> Descargas</a></li>
+            </ul>
+        </nav>
 
-  <header class="header">
-    <div class="wrap nav">
-      <a href="#inicio" class="logo">
-        <img src="logo.png" alt="TorqueOS Logo">
-        <span>TorqueOS</span>
-      </a>
-
-      <button class="menu-btn" id="menuBtn">☰</button>
-
-      <nav class="menu" id="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#features">Características</a>
-        <a href="#capturas">Capturas</a>
-        <a href="#tutoriales">Tutoriales</a>
-        <a href="#downloads">Descargas</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+        <main class="content">
+            <header>
+                <h1>Bienvenido al Panel de Control</h1>
+            </header>
+            <section class="cards-grid">
+                <div class="card">
+                    <h3>Windows 11 Lite</h3>
+                    <p>Optimizado para diagnóstico automotriz.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+            </section>
+        </main>
     </div>
-  </header>
-
-  <main>
-    <section class="hero" id="inicio">
-      <div class="wrap hero-grid">
-        <div class="hero-left">
-          <div class="badge">GAMING · OPTIMIZACIÓN · RENDIMIENTO</div>
-
-          <h1>Optimiza tu sistema y muestra tu proyecto con una web seria y moderna</h1>
-
-          <p>
-            TorqueOS reúne optimización, herramientas, capturas del sistema,
-            avances de la app y recursos visuales en una sola página limpia,
-            ordenada y con estilo tecnológico.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#downloads" class="btn primary">Descargar</a>
-            <a href="#capturas" class="btn secondary">Ver capturas</a>
-          </div>
-
-          <div class="tag-list">
-            <span>Windows</span>
-            <span>TorqueOS</span>
-            <span>App OBD2</span>
-            <span>Capturas</span>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="preview-card">
-            <div class="preview-top">
-              <span class="status-dot"></span>
-              <span>Vista principal</span>
-            </div>
-
-            <div class="preview-screen">
-              <div class="mini-panel">
-                <div class="mini-title">TorqueOS</div>
-                <div class="mini-text">Sistema optimizado + proyecto visual moderno</div>
-                <div class="mini-bar"></div>
-                <div class="mini-bar short"></div>
-              </div>
-
-              <div class="mini-grid">
-                <div class="mini-box"></div>
-                <div class="mini-box"></div>
-                <div class="mini-box"></div>
-                <div class="mini-box"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="features">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-badge">Características</span>
-          <h2>Funciones principales del proyecto</h2>
-          <p>
-            Puedes usar esta sección para mostrar lo más importante de tu sistema,
-            tu app o tus herramientas.
-          </p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <h3>Optimización</h3>
-            <p>Mejoras de rendimiento, limpieza del sistema y experiencia más fluida.</p>
-          </article>
-
-          <article class="card">
-            <h3>Debloat</h3>
-            <p>Reducción de contenido innecesario para dejar un sistema más ligero.</p>
-          </article>
-
-          <article class="card">
-            <h3>Interfaz moderna</h3>
-            <p>Diseño visual más limpio para mostrar tu proyecto de forma profesional.</p>
-          </article>
-
-          <article class="card">
-            <h3>App OBD2</h3>
-            <p>Espacio para mostrar la app, diagnósticos, funciones y datos en vivo.</p>
-          </article>
-
-          <article class="card">
-            <h3>Capturas reales</h3>
-            <p>Galería visual con screenshots del sistema operativo y de la aplicación.</p>
-          </article>
-
-          <article class="card">
-            <h3>Tutoriales</h3>
-            <p>Zona para publicar videos, guías y contenido explicativo.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="capturas">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-badge">Capturas</span>
-          <h2>Capturas de la app y del sistema operativo</h2>
-          <p>
-            Aquí puedes mostrar imágenes reales de TorqueOS y de tu app.
-          </p>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="shot-card">
-            <img src="screenshot1.png" alt="Captura 1">
-            <div class="shot-info">
-              <h3>TorqueOS - Inicio</h3>
-              <p>Pantalla principal del sistema.</p>
-            </div>
-          </div>
-
-          <div class="shot-card">
-            <img src="screenshot2.png" alt="Captura 2">
-            <div class="shot-info">
-              <h3>TorqueOS - Panel</h3>
-              <p>Vista de funciones o herramientas.</p>
-            </div>
-          </div>
-
-          <div class="shot-card">
-            <img src="screenshot3.png" alt="Captura 3">
-            <div class="shot-info">
-              <h3>App OBD2 - Home</h3>
-              <p>Interfaz principal de la aplicación.</p>
-            </div>
-          </div>
-
-          <div class="shot-card">
-            <img src="screenshot4.png" alt="Captura 4">
-            <div class="shot-info">
-              <h3>App OBD2 - Datos</h3>
-              <p>Visualización de funciones, lecturas o estados.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="tutoriales">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-badge">Tutoriales</span>
-          <h2>Videos y guías</h2>
-          <p>
-            En vez de planes, aquí puedes mostrar tutoriales, avances o demostraciones.
-          </p>
-        </div>
-
-        <div class="video-grid">
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_1"
-                title="Tutorial 1"
-                frameborder="0"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <h3>Instalación de TorqueOS</h3>
-            <p>Video explicando instalación, preparación o uso inicial.</p>
-          </div>
-
-          <div class="video-card">
-            <div class="video-frame">
-              <iframe
-                src="https://www.youtube.com/embed/VIDEO_ID_2"
-                title="Tutorial 2"
-                frameborder="0"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <h3>Demo de la app</h3>
-            <p>Video mostrando la interfaz, funciones o diagnósticos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="downloads">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-badge">Descargas</span>
-          <h2>Zona de descarga</h2>
-          <p>
-            Agrega aquí el link principal de descarga del sistema, herramientas o archivos.
-          </p>
-        </div>
-
-        <div class="download-panel">
-          <div class="download-text">
-            <h3>Descarga principal</h3>
-            <p>Pon aquí tu enlace directo de GitHub, MediaFire, Drive o similar.</p>
-          </div>
-          <a href="#" class="btn primary">Descargar ahora</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" id="contacto">
-    <div class="wrap footer-grid">
-      <div>
-        <h4>TorqueOS</h4>
-        <p>Sistema optimizado, app y proyecto visual en una sola web.</p>
-      </div>
-
-      <div>
-        <h4>Enlaces</h4>
-        <a href="#inicio">Inicio</a>
-        <a href="#features">Características</a>
-        <a href="#capturas">Capturas</a>
-        <a href="#downloads">Descargas</a>
-      </div>
-
-      <div>
-        <h4>Comunidad</h4>
-        <a href="#">Discord</a>
-        <a href="#">Telegram</a>
-        <a href="#">YouTube</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
