@@ -1,46 +1,20 @@
-// Animación de velocímetro en el título
-document.addEventListener("DOMContentLoaded", () => {
-  const heroTitle = document.getElementById("hero-title");
-  let speed = 0;
-  const interval = setInterval(() => {
-    speed += 10;
-    heroTitle.textContent = `TorqueOS 11 25H2 — ${speed} km/h`;
-    if (speed >= 220) {
-      clearInterval(interval);
-      heroTitle.textContent = "TorqueOS 11 25H2";
-    }
-  }, 80);
+document.addEventListener('DOMContentLoaded', () => {
+    const heroContent = document.querySelector('.hero-content');
+    const heroImage = document.querySelector('.hero-image');
+
+    // Efecto de aparición suave
+    heroContent.style.opacity = '0';
+    heroContent.style.transform = 'translateX(-20px)';
+    heroImage.style.opacity = '0';
+    heroImage.style.transform = 'translateX(20px)';
+
+    setTimeout(() => {
+        heroContent.style.transition = 'all 1s ease-out';
+        heroContent.style.opacity = '1';
+        heroContent.style.transform = 'translateX(0)';
+        
+        heroImage.style.transition = 'all 1s ease-out';
+        heroImage.style.opacity = '1';
+        heroImage.style.transform = 'translateX(0)';
+    }, 100);
 });
-
-// Fondo con partículas
-const canvas = document.getElementById("bgCanvas");
-const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let particles = [];
-for (let i = 0; i < 100; i++) {
-  particles.push({
-    x: Math.random() * canvas.width,
-    y: Math.random() * canvas.height,
-    radius: Math.random() * 2,
-    dx: (Math.random() - 0.5) * 1,
-    dy: (Math.random() - 0.5) * 1,
-  });
-}
-
-function drawParticles() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "#facc15";
-  particles.forEach(p => {
-    ctx.beginPath();
-    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-    ctx.fill();
-    p.x += p.dx;
-    p.y += p.dy;
-    if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
-    if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
-  });
-  requestAnimationFrame(drawParticles);
-}
-drawParticles();
