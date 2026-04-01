@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TorqueOS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TorqueOS</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <span class="logo-t">T</span>orqueOS
-            </a>
-            <ul class="nav-links">
-                <li><a href="#sistemas">Sistemas</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
-                <li><a href="#github">GitHub</a></li>
-            </ul>
-        </div>
+  <!-- Header -->
+  <header class="navbar">
+    <h1 class="logo">⚡ TorqueOS</h1>
+    <nav>
+      <a href="#iso">ISO</a>
+      <a href="#app">App</a>
+      <a href="#videos">Videos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
+  </header>
 
-    <header class="hero">
-        <h1>Entornos para Diagnóstico Automotriz</h1>
-        <p>Sistemas operativos modificados para máximo rendimiento, baja latencia y uso exclusivo en talleres.</p>
-    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>TorqueOS 11 25H2</h2>
+    <p>Windows optimizado para diagnóstico automotriz</p>
+    <div class="buttons">
+      <a href="#descarga" class="btn-yellow">⬇ Descargar ISO</a>
+      <a href="#detalles" class="btn-gray">⚙ Ver Detalles</a>
+    </div>
+  </section>
 
-    <main class="container">
-        <div class="grid">
-            
-            <div class="card">
-                <h2>Windows 11 25H2 Lite</h2>
-                <p>Estilo Optijuegos. Creado desde cero con NTLite. Sin bloatware ni telemetría, conservando funciones vitales como la Tienda, Cámara y Servicios de Impresión.</p>
-                <div class="card-footer">
-                    <span class="tag">Descarga</span>
-                    <a href="#" class="btn">Ver Detalles</a>
-                </div>
-            </div>
+  <!-- ISO Section -->
+  <section id="iso" class="section">
+    <h3>🚗 TorqueOS 11 25H2</h3>
+    <p>El motor del sistema: rendimiento extremo, baja latencia y entorno limpio para talleres.</p>
+    <ul>
+      <li>🏎️ FPS extra para software de diagnóstico</li>
+      <li>⚙️ Sin bloatware ni telemetría</li>
+      <li>🛠️ Compatible con Tienda y servicios esenciales</li>
+    </ul>
+  </section>
 
-            <div class="card">
-                <h2>TorqueOS Base</h2>
-                <p>El núcleo del proyecto. Un entorno limpio y veloz diseñado para ejecutar software de escaneo automotriz sin interrupciones del sistema.</p>
-                <div class="card-footer">
-                    <span class="tag">En Desarrollo</span>
-                    <a href="#" class="btn">Seguir Avance</a>
-                </div>
-            </div>
+  <!-- App Section -->
+  <section id="app" class="section dark">
+    <h3>📱 Toquea2 OBDII</h3>
+    <p>Escanea códigos de error y datos en vivo con estilo Tesla Dashboard.</p>
+    <img src="mockup-dashboard.png" alt="App Toquea2 OBDII" class="app-img">
+  </section>
 
-        </div>
-    </main>
+  <!-- Videos Section -->
+  <section id="videos" class="section">
+    <h3>🎥 Demostraciones</h3>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/TU_OTRO_VIDEO_ID" allowfullscreen></iframe>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer id="contacto" class="footer">
+    <p>© 2026 TorqueOS Project | <a href="https://github.com/tu-repo">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
