@@ -3,192 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Proyecto</title>
-  <meta name="description" content="Herramienta para optimizar Windows y mejorar rendimiento." />
-
+  <title>L10Taller</title>
+  <meta name="description" content="Sitio moderno estilo software premium." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="#hero" class="brand">
-        <img src="logo.png" alt="Logo" class="brand-logo" />
-        <span>MI PROYECTO</span>
+  <header class="header">
+    <div class="wrap nav">
+      <a href="#" class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>L10Taller</span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
-        ☰
-      </button>
+      <button class="menu-btn" id="menuBtn">☰</button>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="#hero">Inicio</a>
+      <nav class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
         <a href="#features">Características</a>
         <a href="#downloads">Descargas</a>
         <a href="#plans">Planes</a>
-        <a href="#contact">Contacto</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Gaming · Optimización · Rendimiento</span>
-          <h1>Potencia tu sistema con una experiencia más limpia, rápida y moderna</h1>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <div class="badge">Software · Optimización · Herramientas</div>
+          <h1>Una página seria, limpia y moderna para tu proyecto</h1>
           <p>
-            Página de estilo moderno, oscura y profesional para presentar tu proyecto,
-            tus descargas, funciones principales y enlaces de comunidad.
+            Diseño oscuro tipo landing premium, con un bloque principal fuerte,
+            secciones ordenadas y apariencia similar al estilo visual de una web
+            tecnológica moderna.
           </p>
 
-          <div class="hero-actions">
-            <a href="#downloads" class="btn btn-primary">Descargar</a>
-            <a href="#features" class="btn btn-secondary">Ver características</a>
+          <div class="hero-buttons">
+            <a href="#downloads" class="btn primary">Descargar</a>
+            <a href="#features" class="btn secondary">Ver funciones</a>
           </div>
 
-          <ul class="hero-tags">
-            <li>Windows 10/11</li>
-            <li>Debloat</li>
-            <li>Optimización</li>
-            <li>Gaming</li>
-          </ul>
+          <div class="tag-list">
+            <span>Windows</span>
+            <span>Herramientas</span>
+            <span>Optimización</span>
+            <span>Descargas</span>
+          </div>
         </div>
 
-        <div class="hero-card">
-          <div class="hero-badge">Compatible</div>
-          <h3>Windows 10 y Windows 11</h3>
-          <p>
-            Diseño tipo landing page premium con apariencia tecnológica,
-            tarjetas modernas y secciones claras.
-          </p>
-          <div class="hero-preview"></div>
+        <div class="hero-right">
+          <div class="preview-card">
+            <div class="preview-top">
+              <span class="status-dot"></span>
+              <span>Vista principal</span>
+            </div>
+
+            <div class="preview-screen">
+              <div class="mini-panel">
+                <div class="mini-title">Proyecto principal</div>
+                <div class="mini-text">Página moderna estilo software premium</div>
+                <div class="mini-bar"></div>
+                <div class="mini-bar short"></div>
+              </div>
+
+              <div class="mini-grid">
+                <div class="mini-box"></div>
+                <div class="mini-box"></div>
+                <div class="mini-box"></div>
+                <div class="mini-box"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="features section" id="features">
-      <div class="container">
+    <section class="section" id="features">
+      <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Características</span>
-          <h2>Todo organizado en módulos claros</h2>
+          <span class="section-badge">Características</span>
+          <h2>Módulos claros y bien alineados</h2>
           <p>
-            Cambia cada bloque con lo que realmente hace tu proyecto o herramienta.
+            La web de referencia muestra una lista de funciones en bloques bien definidos;
+            aquí está la base para dejarlo limpio y parejo. :contentReference[oaicite:2]{index=2}
           </p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
+        <div class="cards">
+          <article class="card">
             <h3>Optimización</h3>
-            <p>Mejora rendimiento general, reduce carga innecesaria y afina el sistema.</p>
+            <p>Mejora procesos, ordena recursos y presenta tu producto de forma profesional.</p>
           </article>
 
-          <article class="feature-card">
-            <h3>Debloat</h3>
-            <p>Elimina aplicaciones y servicios sobrantes para liberar recursos.</p>
+          <article class="card">
+            <h3>Descargas</h3>
+            <p>Agrega enlaces directos a versiones, herramientas o archivos importantes.</p>
           </article>
 
-          <article class="feature-card">
-            <h3>Drivers y librerías</h3>
-            <p>Instala componentes necesarios para mejor compatibilidad y estabilidad.</p>
+          <article class="card">
+            <h3>Compatibilidad</h3>
+            <p>Muestra sistemas soportados, requisitos y beneficios principales.</p>
           </article>
 
-          <article class="feature-card">
+          <article class="card">
             <h3>Personalización</h3>
-            <p>Adapta el sistema o tu producto con ajustes visuales y técnicos.</p>
+            <p>Adapta colores, textos, iconos y secciones a tu marca.</p>
           </article>
 
-          <article class="feature-card">
-            <h3>Privacidad</h3>
-            <p>Reduce funciones invasivas y mejora la experiencia del usuario.</p>
-          </article>
-
-          <article class="feature-card">
+          <article class="card">
             <h3>Comunidad</h3>
-            <p>Agrega enlaces a Discord, Telegram, YouTube o cualquier red tuya.</p>
+            <p>Enlaza Discord, Telegram, YouTube o cualquier red que uses.</p>
+          </article>
+
+          <article class="card">
+            <h3>Soporte</h3>
+            <p>Agrega instrucciones, contacto y guía rápida para tus usuarios.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="downloads section" id="downloads">
-      <div class="container">
+    <section class="section" id="downloads">
+      <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Descargas</span>
-          <h2>Zona de descargas</h2>
+          <span class="section-badge">Descargas</span>
+          <h2>Zona de descarga principal</h2>
           <p>
-            Aquí puedes poner tu versión principal, versiones beta o herramientas extra.
+            La web de referencia también dedica un bloque completo a descargas y acceso
+            a herramientas. :contentReference[oaicite:3]{index=3}
           </p>
         </div>
 
-        <div class="download-box">
-          <div>
+        <div class="download-panel">
+          <div class="download-text">
             <h3>Versión principal</h3>
-            <p>Descarga tu herramienta principal desde GitHub, MediaFire o tu enlace directo.</p>
+            <p>
+              Pon aquí tu enlace principal de GitHub, Drive, MediaFire o el servicio que uses.
+            </p>
           </div>
-          <a href="#" class="btn btn-primary">Descargar ahora</a>
+          <a href="#" class="btn primary">Descargar ahora</a>
         </div>
       </div>
     </section>
 
-    <section class="plans section" id="plans">
-      <div class="container">
+    <section class="section" id="plans">
+      <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Planes</span>
-          <h2>Bloques tipo membresía o versiones</h2>
+          <span class="section-badge">Planes</span>
+          <h2>Planes o versiones</h2>
           <p>
-            Si no quieres planes de pago, puedes renombrarlos como Free, Pro y Ultimate.
+            La referencia muestra tres niveles de acceso: LITE, PLUS y ULTRA, con precios
+            destacados en tarjetas. :contentReference[oaicite:4]{index=4}
           </p>
         </div>
 
-        <div class="plan-grid">
-          <article class="plan-card">
+        <div class="pricing">
+          <article class="price-card">
             <h3>LITE</h3>
-            <div class="price">$1.99<span>/mes</span></div>
-            <p>Acceso básico a contenido o herramientas.</p>
-            <a href="#" class="btn btn-secondary">Obtener</a>
+            <div class="price">$1.99 <span>/mes</span></div>
+            <p>Acceso básico a funciones o contenido.</p>
+            <a href="#" class="btn secondary">Obtener</a>
           </article>
 
-          <article class="plan-card featured-plan">
+          <article class="price-card featured">
+            <div class="popular">Recomendado</div>
             <h3>PLUS</h3>
-            <div class="price">$3.99<span>/mes</span></div>
-            <p>Plan recomendado con más funciones y ventajas.</p>
-            <a href="#" class="btn btn-primary">Obtener</a>
+            <div class="price">$3.99 <span>/mes</span></div>
+            <p>Más herramientas, más beneficios y mejor valor.</p>
+            <a href="#" class="btn primary">Obtener</a>
           </article>
 
-          <article class="plan-card">
+          <article class="price-card">
             <h3>ULTRA</h3>
-            <div class="price">$9.99<span>/mes</span></div>
+            <div class="price">$9.99 <span>/mes</span></div>
             <p>Acceso completo a todo tu ecosistema.</p>
-            <a href="#" class="btn btn-secondary">Obtener</a>
+            <a href="#" class="btn secondary">Obtener</a>
           </article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" id="contact">
-    <div class="container footer-grid">
+  <footer class="footer">
+    <div class="wrap footer-grid">
       <div>
-        <h3>MI PROYECTO</h3>
-        <p>Landing moderna con estilo tecnológico y oscuro para GitHub Pages.</p>
+        <h4>L10Taller</h4>
+        <p>Sitio estilo software premium para GitHub Pages.</p>
       </div>
 
       <div>
         <h4>Enlaces</h4>
-        <a href="#hero">Inicio</a>
+        <a href="#inicio">Inicio</a>
         <a href="#features">Características</a>
         <a href="#downloads">Descargas</a>
       </div>
 
       <div>
         <h4>Comunidad</h4>
-        <a href="#">Telegram</a>
         <a href="#">Discord</a>
+        <a href="#">Telegram</a>
         <a href="#">YouTube</a>
       </div>
     </div>
