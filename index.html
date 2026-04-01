@@ -3,37 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TorqueOS - Dashboard</title>
+    <title>TorqueOS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/tu-codigo.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="logo">
-                <img src="logo.png" alt="TorqueOS Logo">
-                <span>TorqueOS</span>
-            </div>
-            <ul>
-                <li><a href="#home" class="active"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="#proyectos"><i class="fas fa-tools"></i> Herramientas</a></li>
-                <li><a href="#descargas"><i class="fas fa-download"></i> Descargas</a></li>
-            </ul>
-        </nav>
 
-        <main class="content">
-            <header>
-                <h1>Bienvenido al Panel de Control</h1>
-            </header>
-            <section class="cards-grid">
-                <div class="card">
-                    <h3>Windows 11 Lite</h3>
-                    <p>Optimizado para diagnóstico automotriz.</p>
-                    <button class="btn">Ver más</button>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-t">T</span>orqueOS
+            </a>
+            <ul class="nav-links">
+                <li><a href="#sistemas">Sistemas</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#github">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Entornos para Diagnóstico Automotriz</h1>
+        <p>Sistemas operativos modificados para máximo rendimiento, baja latencia y uso exclusivo en talleres.</p>
+    </header>
+
+    <main class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <h2>Windows 11 25H2 Lite</h2>
+                <p>Estilo Optijuegos. Creado desde cero con NTLite. Sin bloatware ni telemetría, conservando funciones vitales como la Tienda, Cámara y Servicios de Impresión.</p>
+                <div class="card-footer">
+                    <span class="tag">Descarga</span>
+                    <a href="#" class="btn">Ver Detalles</a>
                 </div>
-            </section>
-        </main>
-    </div>
-    <script src="script.js"></script>
+            </div>
+
+            <div class="card">
+                <h2>TorqueOS Base</h2>
+                <p>El núcleo del proyecto. Un entorno limpio y veloz diseñado para ejecutar software de escaneo automotriz sin interrupciones del sistema.</p>
+                <div class="card-footer">
+                    <span class="tag">En Desarrollo</span>
+                    <a href="#" class="btn">Seguir Avance</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
 </body>
 </html>
